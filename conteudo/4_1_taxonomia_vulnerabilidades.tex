@@ -65,14 +65,15 @@ Na grande parte dos sistemas web, recursos como perfis de usuário, pedidos, doc
 Exemplificando, o site https://site.com/pedido?id=1025, o parâmetro está recebendo um ID de pedido, se o servidor não fizer a verificação de autenticação, um atacante pode alterar o ID do pedido e ter acesso aos pedidos pertencente a outros usuários.
 
 
-{
-\color{red}
 \subsubsection{
     Falhas Criptográficas
 }
-essa seção sumiu, mesmo?
-\lipsum[1-3]
-}
+As falhas criptográficas referem-se ao uso incorreto, insuficiente ou inadequado de mecanismos criptográficos para proteger os dados sensíveis em sistemas computacionais. Uma das causas mais comuns de falhas criptográficas é o uso de algoritmos obsoletos ou considerados inseguros. Algoritmos como SHA-1(para hashing), DES ou 3DES (para cifragem), entre outros, já não oferecem garantias adequadas contra ataques modernos, devido à possibilidade de colisões e o avanço de processamento de hardwares modernos. Além disso, a utilização incorreta de algoritmos considerados seguros como o emprego de criptografia simétrica sem gerenciamento adequado de chaves, geração previsível de números aleatórios ou reutilização de vetores de inicialização (IV), podem comprometer completamente a segurança dos sistemas \cite{Blessing, Specter, Weitzner:2021}.
+
+Outro problema recorrente é o armazenamento de senhas em texto puro (plain text) ou com técnicas inadequadas de hash, sem o uso de sal ou funções específicas para armazenamento seguro de credenciais.
+
+Falhas também podem ocorrer durante a transmissão de dados, especialmente quando protocolos seguros não são utilizados ou são configurados incorretamente. A ausência de HTTPS ou o uso inadequado de certificados digitais pode expor informações sensíveis a ataque de interceptação conhecido como main-in-the-middle (MitM).
+
 
 \subsubsection{\textit{Misconfiguration} e \textit{Supply Chain}}
 
