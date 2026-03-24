@@ -1,0 +1,53 @@
+This is BibTeX, Version 0.99e (TeX Live 2026)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+The style file: sbc.bst
+Database file #1: referencias.bib
+Warning--can't use both author and editor fields in Doupe_Cova_Vigna_2010
+Warning--empty publisher in Edmundson_Hartman_2022
+Warning--empty journal in Escape_2023
+Warning--empty chapter and pages in Mello_Wangham_da_Silva_Fraga_Camargo_2006
+Warning--empty publisher in Mello_Wangham_da_Silva_Fraga_Camargo_2006
+Warning--empty publisher in NIST_2020
+You've used 30 entries,
+            1935 wiz_defined-function locations,
+            660 strings with 10129 characters,
+and the built_in function-call counts, 12638 in all, are:
+= -- 1261
+> -- 461
+< -- 29
++ -- 163
+- -- 152
+* -- 923
+:= -- 2058
+add.period$ -- 92
+call.type$ -- 30
+change.case$ -- 222
+chr.to.int$ -- 29
+cite$ -- 36
+duplicate$ -- 607
+empty$ -- 880
+format.name$ -- 198
+if$ -- 2637
+int.to.chr$ -- 2
+int.to.str$ -- 0
+missing$ -- 32
+newline$ -- 149
+num.names$ -- 90
+pop$ -- 244
+preamble$ -- 1
+purify$ -- 226
+quote$ -- 0
+skip$ -- 517
+stack$ -- 0
+substring$ -- 751
+swap$ -- 193
+text.length$ -- 12
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 170
+warning$ -- 6
+while$ -- 79
+width$ -- 0
+write$ -- 388
+(There were 6 warnings)

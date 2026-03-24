@@ -1,0 +1,186 @@
+\begin{thebibliography}{}
+
+\bibitem[Alazmi and De~Leon 2022]{alazmi:2022}
+Alazmi, S. and De~Leon, D.~C. (2022).
+\newblock A systematic literature review on the characteristics and
+  effectiveness of web application vulnerability scanners.
+\newblock {\em IEEE Access}, 10:33200–33219.
+
+\bibitem[Alsaedi 2023]{Alsaedi_2023}
+Alsaedi, M. (2023).
+\newblock Deep learning technique-enabled web application firewall for the
+  detection of web attacks.
+\newblock {\em Sensors}, 23(4):2073.
+
+\bibitem[Alwan and Younis 2021]{Alwan_Younis_2021}
+Alwan, Z.~S. and Younis, M.~F. (2021).
+\newblock {\em An OWASP top ten driven survey on web application protection
+  methods}, page 203–222.
+\newblock Springer.
+
+\bibitem[Appelt 2014]{appelt:2014}
+Appelt, D. (2014).
+\newblock Automated testing for sql injection vulnerabilities: an input
+  mutation approach.
+\newblock In {\em International Symposium on Software Testing and Analysis
+  (ISSTA)}, page 259–269, San Jose. ACM.
+
+\bibitem[Barth et~al. 2022]{barth:2008}
+Barth, A., Jackson, C., and Mitchell, J.~C. (2022).
+\newblock Systematic approach for web protection runtime tools’ effectiveness
+  analysis.
+\newblock In {\em ACM Conference on Computer and Communications Security
+  (CCS)}, page 75–88, Alexandria. ACM.
+
+\bibitem[Blessing et~al. 2021]{blessing2021reallyshouldntrollcrypto}
+Blessing, J., Specter, M.~A., and Weitzner, D.~J. (2021).
+\newblock You really shouldn't roll your own crypto: An empirical study of
+  vulnerabilities in cryptographic libraries.
+
+\bibitem[{Cloud Security Alliance} 2024]{cloudsecurityalliance:2024}
+{Cloud Security Alliance} (2024).
+\newblock Top threats to cloud computing.
+\newblock Technical report, Cloud Security Alliance (CSA).
+\newblock Acessado em: 16 mar. 2026.
+
+\bibitem[Cotroneo 2025]{seth:2025}
+Cotroneo, D. (2025).
+\newblock Comparing effectiveness and efficiency of interactive application
+  security testing (iast) and runtime application self-protection (rasp) tools
+  in a large java-based system.
+\newblock {\em Empirical Software Engineering}.
+
+\bibitem[De~Jesús Domínguez-García et~al. 2023]{ieee:2024}
+De~Jesús Domínguez-García, A., Limón, X., Ocharán-Hernández, J.~O., and
+  Pérez-Arriaga, J.~C. (2023).
+\newblock Security testing for web applications: A systematic literature
+  review.
+\newblock In {\em 2023 11th International Conference in Software Engineering
+  Research and Innovation (CONISOFT)}, page 82–91.
+
+\bibitem[Doupé et~al. 2010]{Doupe_Cova_Vigna_2010}
+Doupé, A., Cova, M., and Vigna, G. (2010).
+\newblock {\em Detection of Intrusions and Malware, and Vulnerability
+  Assessment}, volume 6201, page 111–131.
+\newblock Springer Berlin Heidelberg, Berlin, Heidelberg.
+
+\bibitem[Edmundson and Hartman 2022]{Edmundson_Hartman_2022}
+Edmundson, C. and Hartman, K.~G. (2022).
+\newblock {\em SANS 2022 DevSecOps survey: creating a culture to significantly
+  improve your organization’s security posture}.
+
+\bibitem[Escape 2023]{Escape_2023}
+Escape (2023).
+\newblock The state of graphql security 2023.
+
+\bibitem[Gupta and Gupta 2015]{gupta:2015}
+Gupta, S. and Gupta, B.~B. (2015).
+\newblock Cross-site scripting (xss) attacks and defense mechanisms:
+  classification and state-of-the-art.
+\newblock {\em International Journal of System Assurance Engineering and
+  Management}, 8(S1):512–530.
+
+\bibitem[Halfond et~al. 2006]{halfond:2006}
+Halfond, W. G.~J., Viegas, J., and Orso, A. (2006).
+\newblock A classification of sql-injection attacks and countermeasures.
+\newblock In {\em IEEE International Symposium on Secure Software Engineering
+  (ISSSE)}. IEEE.
+
+\bibitem[Heiderich et~al. 2013]{heide:2013}
+Heiderich, M., Schwenk, J., Frosch, T., Magazinius, J., and Yang, E.~Z. (2013).
+\newblock mxss attacks: Attacking well-secured web-applicationsby using
+  innerhtml mutations.
+\newblock In {\em Proceedings of the 2013 ACM SIGSAC conference on Computer \&
+  communications security - CCS ’13}, page 777–788, Berlin, Germany. ACM
+  Press.
+
+\bibitem[Kusnana et~al. 2025]{kusnana:2025}
+Kusnana, K., Gymnastiar, P., and Riswanto, B. (2025).
+\newblock Analisis kerentanan insecure direct object reference (idor) dan
+  broken access control pada aplikasi invoice berbasis web.
+\newblock {\em Digital Transformation Technology}, 5(2):106–114.
+
+\bibitem[Lin et~al. 2009]{lin:2009}
+Lin, X., Zavarsky, P., Ruhl, R., and Lindskog, D. (2009).
+\newblock Threat modeling for csrf attacks.
+\newblock In {\em 2009 International Conference on Computational Science and
+  Engineering}, volume~3, pages 486--491.
+
+\bibitem[Mello et~al. 2006]{Mello_Wangham_da_Silva_Fraga_Camargo_2006}
+Mello, E.~R., Wangham, M.~S., da~Silva~Fraga, J., and Camargo, E. (2006).
+\newblock {\em Segurança em Serviços Web}.
+
+\bibitem[None 2008]{owasp:2021}
+None (2008).
+\newblock Robust defenses for cross-site request forgery.
+
+\bibitem[of~Standards and (NIST) 2020]{NIST_2020}
+of~Standards, N.~I. and (NIST), T. (2020).
+\newblock {\em NIST special publication 800-207: zero trust architecture}.
+\newblock Gaithersburg.
+
+\bibitem[Pahl and Jamshidi 2016]{Pahl_Jamshidi_2016}
+Pahl, C. and Jamshidi, P. (2016).
+\newblock Microservices: a systematic mapping study.
+\newblock In {\em International Conference on Cloud Computing and Services
+  Science (CLOSER)}, page 137–146, Rome. SCITEPRESS.
+
+\bibitem[Sacramento et~al. 2024]{sacramento:2024}
+Sacramento, L., Ítalo Cunha, Cardoso, G., Souza, A., Franco, A., and Oliveira,
+  L. (2024).
+\newblock Automação de autenticação para testes de segurança em
+  aplicações web no zap.
+\newblock In {\em Anais do XXIV Simpósio Brasileiro de Segurança da
+  Informação e de Sistemas Computacionais (SBSeg 2024)}, page 760–766,
+  Porto Alegre, RS, Brasil. Sociedade Brasileira de Computação - SBC.
+
+\bibitem[Sarmah et~al. 2018]{sarmah:2018}
+Sarmah, U., Bhattacharyya, D., and Kalita, J. (2018).
+\newblock A survey of detection methods for xss attacks.
+\newblock {\em Journal of Network and Computer Applications}, 118:113--143.
+
+\bibitem[Shahriar and Zulkernine 2011]{Shahriar_Zulkernine_2011}
+Shahriar, H. and Zulkernine, M. (2011).
+\newblock Taxonomy and classification of automatic monitoring of program
+  security vulnerability exploitations.
+\newblock {\em Journal of Systems and Software}, 84(2):379–393.
+
+\bibitem[Shar and Tan 2016]{Shar_Tan_2016}
+Shar, L.~K. and Tan, H. B.~K. (2016).
+\newblock Securing web applications from injection and logic vulnerabilities:
+  approaches and challenges.
+\newblock {\em Information and Software Technology}, 74:160–180.
+
+\bibitem[Sureda~Riera et~al. 2025]{sureda:2022}
+Sureda~Riera, T., Ramón Bermejo~Higuera, J., Bermejo~Higuera, J., Antonio
+  Sicilia~Montalvo, J., and Martínez~Herráiz, J.~J. (2025).
+\newblock Twenty-two years since revealing cross-site scripting attacks: a
+  systematic mapping and a comprehensive survey.
+\newblock {\em Computer Modeling in Engineering \& Sciences}, 133(3):579–599.
+
+\bibitem[Tanveer 2025]{Tanveer_2025}
+Tanveer, H. (2025).
+\newblock Towards secure apis: a survey on restful api vulnerability detection.
+\newblock {\em Computers, Materials \& Continua}, 84(3).
+
+\bibitem[Yadav 2025a]{Yadav_2025a}
+Yadav, D. (2025a).
+\newblock Cutting-edge approaches in intrusion detection systems: deep
+  learning, reinforcement learning, and ensemble techniques.
+\newblock {\em Iranian Journal of Science and Technology, Transactions of
+  Electrical Engineering}.
+
+\bibitem[Yadav 2025b]{Yadav_2025b}
+Yadav, D. (2025b).
+\newblock Zero trust security architecture in microservices via mtls + oauth
+  2.0.
+\newblock {\em International Journal of Advanced Research in Computer Science
+  and Electronics Engineering}.
+
+\bibitem[Yadav et~al. 2018]{Yadav_Gupta_Singh_Kumar_Sharma_2018}
+Yadav, D., Gupta, D., Singh, D., Kumar, D., and Sharma, U. (2018).
+\newblock Vulnerabilities and security of web applications.
+\newblock In {\em 2018 4th International Conference on Computing Communication
+  and Automation (ICCCA)}, page 1–5.
+
+\end{thebibliography}

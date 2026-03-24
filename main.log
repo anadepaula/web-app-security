@@ -1,0 +1,679 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.22)  24 MAR 2026 13:57
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**main.tex
+(./main.tex
+LaTeX2e <2025-11-01>
+L3 programming layer <2026-01-19>
+(/usr/local/texlive/2026/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
+(/usr/local/texlive/2026/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count275
+\c@section=\count276
+\c@subsection=\count277
+\c@subsubsection=\count278
+\c@paragraph=\count279
+\c@subparagraph=\count280
+\c@figure=\count281
+\c@table=\count282
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\bibindent=\dimen148
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/lipsum/lipsum.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2026-01-19 L3 programming layer (loader) 
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count283
+))
+Package: l3keys2e 2025-10-09 LaTeX2e option processing using LaTeX3 keys
+)
+Package: lipsum 2021-09-20 v2.7 150 paragraphs of Lorem Ipsum dummy text
+\g__lipsum_par_int=\count284
+\l__lipsum_a_int=\count285
+\l__lipsum_b_int=\count286
+(/usr/local/texlive/2026/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex))
+(./sbc-template.sty
+Package: sbc-template 2001/06/09
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2026/03/07 v6.0 Page Geometry
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks17
+)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+
+(/usr/local/texlive/2026/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2024/12/12 v1.0g TeX engine tests
+))
+\Gm@cnth=\count287
+\Gm@cntv=\count288
+\c@Gm@tempcnt=\count289
+\Gm@bindingoffset=\dimen149
+\Gm@wd@mp=\dimen150
+\Gm@odd@mp=\dimen151
+\Gm@even@mp=\dimen152
+\Gm@layoutwidth=\dimen153
+\Gm@layoutheight=\dimen154
+\Gm@layouthoffset=\dimen155
+\Gm@layoutvoffset=\dimen156
+\Gm@dimlist=\toks18
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen157
+\captionmargin=\dimen158
+\caption@leftmargin=\dimen159
+\caption@rightmargin=\dimen160
+\caption@width=\dimen161
+\caption@indent=\dimen162
+\caption@parindent=\dimen163
+\caption@hangindent=\dimen164
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count290
+\c@continuedfloat=\count291
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/psnfss/times.sty
+Package: times 2020/03/25 PSNFSS-v9.3 (SPQR) 
+)
+\c@instn=\count292
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2025/01/04 v2.17 Sectioning titles
+\ttl@box=\box53
+\beforetitleunit=\skip51
+\aftertitleunit=\skip52
+\ttl@plus=\dimen165
+\ttl@minus=\dimen166
+\ttl@toksa=\toks19
+\titlewidth=\dimen167
+\titlewidthlast=\dimen168
+\titlewidthfirst=\dimen169
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count293
+))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 106.
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen170
+\Gin@req@width=\dimen171
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2024/02/08 v1.3d Input encoding file
+\inpenc@prehook=\toks20
+\inpenc@posthook=\toks21
+)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2026/03/08 v26.4 The multilingual framework for LuaLaTeX, pdfLaT
+eX and XeLaTeX
+\babel@savecnt=\count294
+LaTeX Encoding Info:    Redeclaring text command \ij (encoding OT1) on input li
+ne 2078.
+LaTeX Encoding Info:    Redeclaring text command \IJ (encoding OT1) on input li
+ne 2080.
+LaTeX Encoding Info:    Redeclaring text command \ij (encoding T1) on input lin
+e 2082.
+LaTeX Encoding Info:    Redeclaring text command \IJ (encoding T1) on input lin
+e 2083.
+LaTeX Encoding Info:    Ignoring declaration for text command \ij (encoding ?) 
+on input line 2084.
+LaTeX Encoding Info:    Ignoring declaration for text command \IJ (encoding ?) 
+on input line 2086.
+LaTeX Encoding Info:    Ignoring declaration for text command \SS (encoding ?) 
+on input line 2111.
+\U@D=\dimen172
+\l@unhyphenated=\language91
+
+(/usr/local/texlive/2026/texmf-dist/tex/generic/babel/txtbabel.def)
+\bbl@readstream=\read2
+\bbl@dirlevel=\count295
+
+(/usr/local/texlive/2026/texmf-dist/tex/generic/babel/locale/invalid/babel-braz
+il.tex)
+
+Package babel Warning: Name 'brazil' is deprecated.
+(babel)                Use 'brazilian' instead.
+(babel)                Reported on input line 4330.
+
+Package babel Info: Importing font and identification data for brazil
+(babel)             from babel-pt-BR.ini. Reported on input line 4330.
+(/usr/local/texlive/2026/texmf-dist/tex/generic/babel-portuges/brazilian.ldf
+Language: portuges 2026/01/24 v1.2u Portuguese support from the babel system
+Package babel Info: Hyphen rules for 'brazil' set to \l@portuguese
+(babel)             (\language73). Reported on input line 100.
+Package babel Info: Making " an active character on input line 132.
+))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen173
+\lightrulewidth=\dimen174
+\cmidrulewidth=\dimen175
+\belowrulesep=\dimen176
+\belowbottomsep=\dimen177
+\aboverulesep=\dimen178
+\abovetopsep=\dimen179
+\cmidrulesep=\dimen180
+\cmidrulekern=\dimen181
+\defaultaddspace=\dimen182
+\@cmidla=\count296
+\@cmidlb=\count297
+\@aboverulesep=\dimen183
+\@belowrulesep=\dimen184
+\@thisruleclass=\count298
+\@lastruleclass=\count299
+\@thisrulewidth=\dimen185
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/tools/array.sty
+Package: array 2025/09/25 v2.6n Tabular extension package (FMi)
+\col@sep=\dimen186
+\ar@mcellbox=\box54
+\extrarowheight=\dimen187
+\NC@list=\toks22
+\extratabsurround=\skip53
+\backup@length=\skip54
+\ar@cellbox=\box55
+)
+\TX@col@width=\dimen188
+\TX@old@table=\dimen189
+\TX@old@col=\dimen190
+\TX@target=\dimen191
+\TX@delta=\dimen192
+\TX@cols=\count300
+\TX@ftn=\toks23
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/csvsimple/csvsimple.sty
+Package: csvsimple 2024/09/27 v2.7.0 LaTeX CSV file processing
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/csvsimple/csvsimple-legacy.sty
+Package: csvsimple-legacy 2024/09/27 version 2.7.0 LaTeX2e CSV file processing
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.te
+x
+\pgfutil@everybye=\toks24
+\pgfutil@tempdima=\dimen193
+\pgfutil@tempdimb=\dimen194
+)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box56
+) (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2025-08-29 v3.1.11a (3.1.11a)
+))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks25
+\pgfkeys@temptoks=\toks26
+
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfil
+tered.code.tex
+\pgfkeys@tmptoks=\toks27
+))) (/usr/local/texlive/2026/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
+) (/usr/local/texlive/2026/texmf-dist/tex/latex/tools/shellesc.sty
+Package: shellesc 2023/07/08 v1.0d unified shell escape interface for LaTeX
+Package shellesc Info: Restricted shell escape enabled on input line 77.
+)
+\csv@file=\read3
+\c@csvinputline=\count301
+\c@csvrow=\count302
+\c@csvcol=\count303
+\csv@out=\write3
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 274.
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
+Package xcolor Info: Model `RGB' extended on input line 1365.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
+)
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 3
+4.
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+) (./main.aux
+Package babel Info: 'brazil' activates 'portuges' shorthands.
+(babel)             Reported on input line 29.
+)
+\openout1 = `main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(85.35826pt, 426.79135pt, 85.35826pt)
+* v-part:(T,H,B)=(99.58464pt, 674.33032pt, 71.13188pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=426.79135pt
+* \textheight=674.33032pt
+* \oddsidemargin=13.08827pt
+* \evensidemargin=13.08827pt
+* \topmargin=-9.68535pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=44.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+(/usr/local/texlive/2026/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count304
+\scratchdimen=\dimen195
+\scratchbox=\box57
+\nofMPsegments=\count305
+\nofMParguments=\count306
+\everyMPshowfont=\toks28
+\MPscratchCnt=\count307
+\MPscratchDim=\dimen196
+\MPnumerator=\count308
+\makeMPintoPDFobject=\count309
+\everyMPtoPDFconversion=\toks29
+) (/usr/local/texlive/2026/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 36.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 36.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 36.
+
+Overfull \hbox (20.99629pt too wide) in paragraph at lines 36--36
+ [][] 
+ []
+
+(./conteudo/0_resumo.tex
+Underfull \hbox (badness 3009) in paragraph at lines 3--4
+\OT1/ptm/m/it/12 re-side na automa[][]ao via Dev-Se-cOps [[]] e
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--12
+\OT1/ptm/m/it/12 [[], [],
+ []
+
+
+Underfull \hbox (badness 3536) in paragraph at lines 11--12
+[]\OT1/ptm/m/it/12 ]. The metho-do-logy in-vol-ved a li-te-ra-ture re-view via
+ []
+
+
+Underfull \hbox (badness 5245) in paragraph at lines 11--12
+\OT1/ptm/m/it/12 Go-o-gle Scho-lar sup-por-ted by ge-ne-ra-tive AI for con-cep-
+tual synthe-sis
+ []
+
+
+Underfull \hbox (badness 5548) in paragraph at lines 11--12
+\OT1/ptm/m/it/12 [[]]. Gaps were iden-ti-fied re-gar-
+ []
+
+
+Underfull \hbox (badness 3000) in paragraph at lines 11--12
+\OT1/ptm/m/it/12 ding sha-dow API se-cu-rity [[], []] and the in-ter-
+ []
+
+
+Underfull \hbox (badness 1728) in paragraph at lines 11--12
+\OT1/ptm/m/it/12 pre-ta-bi-lity of AI in th-reat de-tec-tion [[], []]. The
+ []
+
+
+Underfull \hbox (badness 3849) in paragraph at lines 11--12
+\OT1/ptm/m/it/12 study con-clu-des that the fi-eld's fu-ture lies in Dev-Se-cOp
+s au-to-ma-tion
+ []
+
+
+Underfull \hbox (badness 1540) in paragraph at lines 11--12
+\OT1/ptm/m/it/12 [[]] and the con-so-li-da-tion of Zero Trust ar-
+ []
+
+) (./conteudo/1_introducao.tex [1
+
+{/usr/local/texlive/2026/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/loc
+al/texlive/2026/texmf-dist/fonts/enc/dvips/base/8r.enc}]) (./conteudo/2_revisao
+_bibliografica.tex
+Underfull \hbox (badness 1292) in paragraph at lines 11--3
+[]\OT1/ptm/m/n/12 Neste con-texto, o pre-sente tra-ba-lho ex-plora os con-cei-t
+os fun-da-men-tais de
+ []
+
+[2]) (./conteudo/3_metodologia.tex) (./conteudo/4_0_discussao.tex [3]
+(./conteudo/4_1_taxonomia_vulnerabilidades.tex
+LaTeX Info: Symbol \textrightarrow not provided by
+            font family ptm in TS1 encoding.
+            Default family used instead on input line 14.
+ [4{/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.en
+c}]
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 2
+6.
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+)
+Underfull \hbox (badness 10000) in paragraph at lines 26--27
+[]\OT1/ptm/m/n/12 Come[]ando pelo \OT1/ptm/m/it/12 SQL in-jec-tion (SQLi) []\OT
+1/ptm/m/n/12 e uma vul-ne-ra-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--27
+\OT1/ptm/m/n/12 bi-li-dade que o usu[]ario uti-liza co-man-dos SQL, (por exem-p
+lo,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--27
+[][]\OT1/pcr/m/n/12 SELECT * FROM <tabela> WHERE <coluna>='' OR 1=1[]\OT1/ptm/m
+/n/12 ) para aces-sar,
+ []
+
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 59--60
+[]\OT1/ptm/m/n/12 Considerando um \OT1/ptm/m/it/12 end-po-int \OT1/ptm/m/n/12 a
+d-mi-nis-tra-tivo como por exem-plo
+ []
+
+
+Underfull \hbox (badness 4353) in paragraph at lines 59--60
+[][]\OT1/pcr/m/n/12 https://site.com/admin/financas[]\OT1/ptm/m/n/12 , se o ser
+-vi-dor n[]ao va-li-dar cor-re-ta-
+ []
+
+[6]
+Underfull \hbox (badness 1038) in paragraph at lines 80--81
+\OT1/ptm/m/n/12 re-pre-sen-tam uma das prin-ci-pais cau-sas de viola[][]ao de d
+a-dos em am-bi-ente \OT1/ptm/m/it/12 cloud
+ []
+
+) (./conteudo/4_2_mecanismos_defesa.tex [7]
+LaTeX Font Info:    Trying to load font information for OT1+phv on input line 1
+2.
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/psnfss/ot1phv.fd
+File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
+)
+(./tabelas/tabela_tecnicas_defesa.tex
+Underfull \hbox (badness 2573) in paragraph at lines 39--39
+[]|\OT1/ptm/m/n/10.95 Requer refatora[][]ao; n[]ao co-bre l[]ogica de
+ []
+
+
+Underfull \hbox (badness 1226) in paragraph at lines 39--39
+[]|\OT1/ptm/m/n/10.95 Valida[][]ao po-si-tiva de
+ []
+
+
+Underfull \hbox (badness 1946) in paragraph at lines 39--39
+[]|\OT1/ptm/m/n/10.95 Content Se-cu-rity Po-
+ []
+
+
+Underfull \hbox (badness 2744) in paragraph at lines 39--39
+[]|\OT1/ptm/m/n/10.95 Configura[][]ao com-plexa; in-com-pa-ti-bi-li-dade
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 39--39
+[]|\OT1/ptm/m/n/10.95 Encoding con-tex-tual/
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 39--39
+[]|\OT1/ptm/m/n/10.95 Dependente do con-texto (HTML;
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 39--39
+\OT1/ptm/m/n/10.95 JS; URL); mXSS em in-nerHTML
+ []
+
+
+Underfull \hbox (badness 1297) in paragraph at lines 39--39
+[]|\OT1/ptm/m/n/10.95 Roubo de sess[]ao via
+ []
+
+
+Underfull \hbox (badness 3199) in paragraph at lines 39--39
+[]|\OT1/ptm/m/n/10.95 CSRF To-ken/ Sa-me-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 39--39
+[]|\OT1/ptm/m/n/10.95 RBAC/ ABAC/
+ []
+
+
+Underfull \hbox (badness 2970) in paragraph at lines 39--39
+[]|\OT1/ptm/m/n/10.95 Broken Ac-cess Con-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 39--39
+[]|\OT1/ptm/m/n/10.95 Modelagem de per-miss[]oes com-plexa;
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 39--39
+\OT1/ptm/m/n/10.95 Criptografia em re-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 39--39
+[]|\OT1/ptm/m/n/10.95 Misconfiguration;
+ []
+
+
+Overfull \hbox (37.26494pt too wide) in alignment at lines 39--39
+[][][] 
+ []
+
+) (./tabelas/tabela_comparativo_sast_dast_iast.tex
+Underfull \hbox (badness 10000) in paragraph at lines 34--34
+[]|\OT1/ptm/m/n/10.95 Pr[]e-execu[][]ao
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--34
+[]|\OT1/ptm/m/n/10.95 Runtime (aplica[][]ao
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--34
+[]|\OT1/ptm/m/n/10.95 Completa (tr[]afego
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--34
+[]|\OT1/ptm/m/n/10.95 Menor
+ []
+
+
+Overfull \hbox (81.22308pt too wide) in alignment at lines 34--34
+[][][][] 
+ []
+
+)
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 3
+1.
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/psnfss/ts1ptm.fd
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+)
+Underfull \vbox (badness 1117) has occurred while \output is active []
+
+ [8]
+[9]
+LaTeX Font Info:    Trying to load font information for TS1+phv on input line 3
+6.
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/psnfss/ts1phv.fd
+File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
+)
+(./tabelas/tabela_comparativo_waf_rasp.tex
+Underfull \hbox (badness 10000) in paragraph at lines 34--34
+[]|\OT1/ptm/m/n/10.95 RASP in-ter-cepta
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--34
+[]|\OT1/ptm/m/n/10.95 RASP ba-se-ado em
+ []
+
+
+Overfull \hbox (81.22308pt too wide) in alignment at lines 34--34
+[][][][] 
+ []
+
+)) (./conteudo/4_3_seguranca_arquiteturas_modernas.tex [10] [11]
+Underfull \hbox (badness 2772) in paragraph at lines 37--38
+\OT1/ptm/m/n/12 Aplica[][]oes na-ti-vas da nu-vem de-pen-dem ati-va-mente de in
+-fra-es-tru-tu-ras al-ta-mente
+ []
+
+)) (./conteudo/5_tendencias.tex [12] [13]) (./conteudo/6_conclusao.tex
+Underfull \hbox (badness 1028) in paragraph at lines 8--9
+[]\OT1/ptm/m/n/12 Este tra-ba-lho de-mons-trou que a seguran[]a em aplica[][]oe
+s web consolidou-
+ []
+
+
+Underfull \hbox (badness 6775) in paragraph at lines 8--9
+\OT1/ptm/m/n/12 se como um pi-lar es-trat[]egico, trans-cen-dendo a ca-mada pe-
+ri-me-tral de rede
+ []
+
+
+Underfull \hbox (badness 1939) in paragraph at lines 8--9
+\OT1/ptm/m/n/12 surge como o princ[]^^Ppio uni-fi-ca-dor fun-da-men-tal, in-te-
+grando a an[]alise de c[]odigo
+ []
+
+) (./conteudo/7_referencias.tex
+Underfull \hbox (badness 1721) in paragraph at lines 12--5
+\OT1/ptm/m/n/12 ga-ran-tir que a agi-li-dade no de-sen-vol-vi-mento n[]ao com-p
+ro-meta a in-te-gri-dade dos
+ []
+
+
+Underfull \hbox (badness 1242) in paragraph at lines 12--5
+\OT1/ptm/m/n/12 da-dos e a re-sili[]encia das in-fra-es-tru-tu-ras mo-der-nas [
+[],
+ []
+
+[14] (./main.bbl [15] [16])) [17] (./main.aux)
+ ***********
+LaTeX2e <2025-11-01>
+L3 programming layer <2026-01-19>
+ ***********
+ ) 
+Here is how much of TeX's memory you used:
+ 8046 strings out of 467525
+ 150403 string characters out of 5418988
+ 673386 words of memory out of 5000000
+ 36780 multiletter control sequences out of 15000+600000
+ 653218 words of font info for 84 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 73i,14n,79p,1581b,437s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><
+/usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrb1200.pfb></u
+sr/local/texlive/2026/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local
+/texlive/2026/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texliv
+e/2026/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2026/tex
+mf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2026/texmf-dist/f
+onts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1
+/urw/times/utmri8a.pfb>
+Output written on main.pdf (17 pages, 161197 bytes).
+PDF statistics:
+ 101 PDF objects out of 1000 (max. 8388607)
+ 65 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+
