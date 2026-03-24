@@ -2,7 +2,7 @@
     Mecanismos de Defesa
 } \label{sec:mecanismos_defesa}
 
-Os mecanismos de defesa complementam a taxonomia de vulnerabilidades ao reunir controles para prevenção, detecção e mitigação de ataques. Esta seção apresenta defesas por categoria, ferramentas de análise e soluções em \textit{runtime}.
+Os mecanismos de defesa complementam a taxonomia de vulnerabilidades ao reunir controles de prevenção, detecção e mitigação de ataques. Esta seção apresenta defesas por categoria, ferramentas de análise e soluções em \textit{runtime}.
 
 \subsubsection{Defesas por categoria}
 
@@ -26,7 +26,7 @@ As ferramentas de análise identificam vulnerabilidades ao longo do ciclo de vid
 
 \subsubsection{Defesas em \textit{runtime}: WAF, WAAP, RASP}
 
-Defesas em \textit{runtime} atuam em produção. O WAF (\textit{Web Application Firewall}) filtra tráfego HTTP por regras e assinaturas, com limitações de abordagens \textit{black-box} \cite{Doupe2010IntrusionDetectionCrawler}. O WAAP amplia a proteção para APIs, e o RASP (\textit{Runtime Application Self-Protection}) atua dentro da aplicação, usando contexto de execução para elevar precisão e mitigar ataques \textit{zero-day} \cite{SuredaRiera2025TwentyTwoYearsXSS}.
+Defesas em \textit{runtime} atuam em produção. O WAF (\textit{Web Application Firewall}) filtra tráfego HTTP por regras e assinaturas, com limitações típicas de abordagens \textit{black-box} \cite{Doupe2010IntrusionDetectionCrawler}. O WAAP amplia a proteção para APIs, e o RASP (\textit{Runtime Application Self-Protection}) atua dentro da aplicação, usando contexto de execução para elevar a precisão e mitigar ataques \textit{zero-day} \cite{SuredaRiera2025TwentyTwoYearsXSS}.
 
 \subsubsection{Comparativo WAF × RASP}
 
@@ -38,4 +38,4 @@ Defesas em \textit{runtime} atuam em produção. O WAF (\textit{Web Application 
     \input{tabelas/tabela_comparativo_waf_rasp}
 \end{table}
 
-Os autores recomendam uso complementar: WAF na borda para filtragem e mitigação de DDoS, e RASP para proteção contextual contra explorações que ultrapassem a camada perimetral.
+Os autores recomendam o uso complementar: WAF na borda para filtragem e mitigação de DDoS, e RASP para proteção contextual contra explorações que ultrapassem a camada perimetral.

@@ -2,13 +2,13 @@
     Segurança de Arquiteturas Modernas
 }\label{sec:seguranca_arquiteturas_modernas}
 
-A evolução dos sistemas web para arquiteturas modernas, como microsserviços e aplicações baseadas em nuvem, transformou significativamente a superfície de ataque. Com a fragmentação de aplicações monolíticas em Serviços Web distribuídos, a comunicação inter-processos e a exposição de APIs tornaram-se o núcleo do funcionamento e, consequentemente, da segurança destas aplicações.
+A evolução dos sistemas web para arquiteturas modernas, como microsserviços e aplicações baseadas em nuvem, transformou significativamente a superfície de ataque. Com a fragmentação de aplicações monolíticas em serviços web distribuídos, a comunicação entre processos e a exposição de APIs tornaram-se centrais para o funcionamento e, consequentemente, para a segurança dessas aplicações.
 
 \subsubsection{
     APIs REST — OWASP API Top 10, BOLA, \textit{rate limiting}
 }\label{sec:apis_rest}
 
-APIs REST são predominantes em aplicações modernas e concentram riscos relevantes. Segundo o OWASP API Top 10 (2023), a vulnerabilidade de maior destaque é \textit{Broken Object Level Authorization} (BOLA), que ocorre quando o backend expõe identificadores de objetos sem validar se o usuário autenticado possui permissão para acessá-los. Esse cenário permite leitura, alteração ou exclusão indevida de dados de terceiros.
+As APIs REST são predominantes em aplicações modernas e concentram riscos relevantes. Segundo o OWASP API Top 10 (2023), a vulnerabilidade de maior destaque é \textit{Broken Object Level Authorization} (BOLA), que ocorre quando o backend expõe identificadores de objetos sem validar se o usuário autenticado possui permissão para acessá-los. Esse cenário permite leitura, alteração ou exclusão indevida de dados de terceiros.
 
 Outro ponto crítico é a ausência de \textit{rate limiting}, associada ao \textit{Unrestricted Resource Consumption} (Top 4 em 2023). Sem limites de volume e frequência, requisições podem esgotar recursos da aplicação e de serviços dependentes, degradando disponibilidade e ampliando a superfície de abuso.
 
@@ -16,7 +16,7 @@ Outro ponto crítico é a ausência de \textit{rate limiting}, associada ao \tex
     APIs GraphQL — introspecção, \textit{query depth}, DoS
 }\label{sec:apis_graphql}
 
-GraphQL, embora amplamente adotado, introduz riscos específicos de segurança. Como o cliente define a complexidade da requisição em um único \textit{endpoint} (geralmente \texttt{/graphql}), consultas sintaticamente válidas podem impor alto custo computacional e causar DoS. Um vetor recorrente é a \textit{query depth}, isto é, o nível de aninhamento dos campos. A mitigação inclui validação estrutural da consulta e análise da \textit{Abstract Syntax Tree} (AST) antes da execução.
+O GraphQL, embora amplamente adotado, introduz riscos específicos de segurança. Como o cliente define a complexidade da requisição em um único \textit{endpoint} (geralmente \texttt{/graphql}), consultas sintaticamente válidas podem impor alto custo computacional e causar DoS. Um vetor recorrente é a \textit{query depth}, isto é, o nível de aninhamento dos campos. A mitigação inclui validação estrutural da consulta e análise da \textit{Abstract Syntax Tree} (AST) antes da execução.
 
 A introspecção, recurso nativo do GraphQL, permite descobrir toda a estrutura da API. Em produção, sua exposição facilita ataques mais precisos, incluindo BOLA e consultas profundas para exaustão de recursos. Por isso, recomenda-se desativar a introspecção em ambientes produtivos.
 
