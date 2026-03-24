@@ -2,7 +2,12 @@
 \small
 \begin{tabularx}
     {\textwidth}
-    {@{}XXXX@{}}
+        @{}
+        >{\hsize=.6\hsize}X 
+        >{\hsize=1\hsize}X 
+        >{\hsize=1\hsize}X
+        >{\hsize=1.4\hsize}X
+        @{}
     \toprule
         \textbf{Critério}
         & \textbf{SAST}
@@ -20,15 +25,13 @@
             & \iast
         }
     \bottomrule
-    \multicolumn
-        {4}
-        {l}
-        {
-            \textbf{Fonte:}
-            \footnotesize
-            \cite{Alazmi2022WebScannerReview};
-            \cite{Sacramento2024AutenticacaoZAP};
-            \cite{DeJesus2023SecurityTestingWebApps};
-            \cite{Cotroneo2025IASTvsRASP}.
-        }
+
 \end{tabularx}
+
+{
+    \footnotesize \textbf{Fonte:}
+    \cite{Alazmi2022WebScannerReview};
+    \cite{Sacramento2024AutenticacaoZAP};
+    \cite{DeJesus2023SecurityTestingWebApps};\\
+    \cite{Cotroneo2025IASTvsRASP}.
+}
