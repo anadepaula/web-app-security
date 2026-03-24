@@ -1,0 +1,39 @@
+\subsection{
+    Segurança de Arquiteturas Modernas
+}\label{sec:seguranca_arquiteturas_modernas}
+
+A evolução dos sistemas web para arquiteturas modernas, como microsserviços e aplicações baseadas em nuvem, transformou significativamente a superfície de ataque. Com a fragmentação de aplicações monolíticas em Serviços Web distribuídos, a comunicação inter-processos e a exposição de APIs tornaram-se o núcleo do funcionamento e, consequentemente, da segurança destas aplicações.
+
+\subsubsection{
+    APIs REST — OWASP API Top 10, BOLA, \textit{rate limiting}
+}\label{sec:apis_rest}
+
+APIs REST são extremamente comuns hoje em dia, fazendo parte de muitas aplicações modernas. Com base no OWASAP API Top 10 de 2023, que seria a lista mais atualizada das vulnerabilidades mais críticas de APIs, a vulnerabilidade mais comum para essas APIs é \textit{Broken Object Level Authorization} (BOLA), um tipo de vulnerabilidade muito difundida e de fácil detecção. Esse problema ocorre pela falha na validação de permissões no nível de objeto, em que APIs expõem um identificador direto e não verifica no backend se o usuário logado tem autorização para acessar aquele registro, podendo deixar um usuário não autorizado ler, alterar ou deletar dados de outra pessoa.
+
+Uma técnica de defesa como \textit{rate limiting}, quando em falta pode ocasionar em vulnerabilidades também, como o Consumo Irrestrito de Recursos (\textit{Unrestricted Resource Consumption}), a vulnerabilidade top 4 na lista de 2023. O processamento de requisições consome recursos do servidor, ou até recursos terceiros, que se não limitados por quantidade ou frequência, pode fazer a API vulnerável.
+
+\subsubsection{
+    APIs GraphQL — introspecção, \textit{query depth}, DoS
+}\label{sec:apis_graphql}
+
+O modelo GraphQL é uma alternativa a APIs RESTful, e com uma ampla adoção, também tem dsafios de segurança exclusivos. O GraphQL entrega ao cliente a capacidade de formular a complexidade da requisição. Nesse modelo, a comunicação flui por um único endpoint (geralmente /graphql), e com isso, o problema é que uma requisição sintaticamente válida pode ser projetada para exigir um esforço massivo do servidor, esse seria o DoS (Denial of Service) em GraphQL. Se o servidor não estiver otimizado, pode fazer com que uma única chamada frontend realize centenas de consultas ao banco de dados. A \textit{query depth} é o principal vetor utilizado para causa o DoS. Ela se refere ao nível de aninhamento dos campos da estrutura da requisição. A solução é validar a estrutura da requisição. Uma prática padrão é utilizar analisadores que verificam a \textit{Abstract Syntax Tree} (AST) da query assum que ela chega.
+
+A introspecção é uma funcionalidade nativa e muito poderosa do GraphQL que permite ao cliente consultar o próprio servidor para descobrir o que ele é capaz de fazer. O perigo disso é deixar a introspecção ativada em produção, que equivaleria a entregar ao atacante a documentação completa da sua API. Isso revela a estrutura exata dos relacionamentos, deixando possível ataques precisos de BOLA (Broken Object Level Authorization) ou elaborar queries profundas para derrubar o servidor. A recomendação unânime de segurança é desativar as consultas de introspecção no ambiente de produção.
+
+\subsubsection{
+    Microserviços — mTLS, API \textit{Gateway}, gestão de segredos
+}\label{sec:microservicos}
+
+O artigo "Zero Trust Security Architecture in Microservices via mTLS" [IJARCSE, 2025], propõe um modelo de segurança focado em eliminar a confiança implícita em redes distribuídas.
+
+O mTLS (Mutual Transport Layer Security) atua como pilar funcamental da arquitetura Zero Trust (ZTSA). Diferente do TLS comum, ele garante que as comunicações entre os microsserviços sejam não apenas criptografadas, mas autenticadas de forma mútua. proxies sidecar (Envoy) são acoplados a cada microsserviço e encarregados de validar os certificados dos pares a cada nova conexão estabelecida. O API Gateway funciona como o principal ponto de controle de acesso para o tráfego externo que entra na aplicação. O API Gateway se comunica diretamente com o Provedor de Identidade (como o Keycloak) para validar os tokens (JWTs) recebidos dos usuários. Somente após a validação bem-sucedida, o API Gateway repassa o tráfego para os microsserviços internos através de conexões protegidas por mTLS. A arquitetura aborda a gestão de segredos por meio de \textbf{Rotação Agressiva de Certificados} e \textbf{Tokens de Curta Duração}. 
+
+A Rotação Agressiva de Certificados em vez de usar certificados estáticos, o componente Citadel do Istio emite automaticamente certificados X.509 com um período de validade muito curto, de apenas 24 horas. Para estreitar ainda mais a janela de oportunidade para atacantes, o sistema força a rotação desses certificados a cada 12 horas. Já os Tokens de Curta Duração utiliza JSON Web Tokens (JWTs) emitidos de forma centralizada para representar identidades. O documento alerta que o uso de tokens de curta duração minimiza os riscos de segurança, mas exige mecanismos muito eficientes para atualização.
+
+\subsubsection{
+    \textit{Cloud-native} — IaC \textit{scanning}, \textit{Kubernetes}, S3
+}\label{sec:cloud_native}
+
+Aplicações nativas da nuvem dependem ativamente de infraestruturas altamente dinâmicas e configuráveis (orquestradores de contêineres e armazenamento em provedores). O uso excessivo de recursos sem as restrições adequadas frequentemente leva a vulnerabilidades de Má Configuração de Segurança. Um cenário de ataque comum envolve permissões padrão em provedores de nuvem (CSP) deixadas abertas para a Internet (por exemplo, permissões de armazenamento do Amazon S3). Isso permite que dados confidenciais sejam facilmente acessados por qualquer usuário da rede. A prevenção exige processos de \textit{hardening} consistentes e a revisão constante das permissões de armazenamento em nuvem (ACLs e \textit{buckets}).
+
+Por fim, o ecossistema \textit{cloud-native} faz forte uso de Infraestrutura como Código (IaC) e \textit{pipelines} de CI/CD (Integração e Entrega Contínuas). O OWASP introduziu a categoria "Falhas na Integridade de Dados e Software" (A08:2021), focando em atualizações e \textit{pipelines} não verificados. Sem o devido controle, \textit{pipelines} de CI/CD podem introduzir acessos não autorizados ou implantar códigos maliciosos na infraestrutura. A defesa engloba a configuração e o controle de acesso restrito aos \textit{pipelines}, verificação de dependências com ferramentas de \textit{Software Composition Analysis} e a implementação de verificações focadas em Infraestrutura como Código (IaC) para prevenir vulnerabilidades de provisionamento.

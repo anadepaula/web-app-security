@@ -1,0 +1,5 @@
+criterio,sast,dast,iast
+Momento da análise,Pré-execução (código),Runtime (aplicação em execução),Durante testes funcionais
+Cobertura de fluxo,Parcial (sem contexto runtime),Completa (tráfego real),Alta (instrumentação)
+Falsos positivos,Maior,Intermediário,Menor \cite{seth:2025}
+Integração CI/CD,Nativa,Requer ambiente implantado (deployed),Requer agente no processo

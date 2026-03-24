@@ -1,0 +1,6 @@
+categoria,waf,rasp,observacao
+SQL Injection,Média (assinaturas),Alta \newline (contexto de query),RASP identifica ponto de injeção
+XSS,Média \newline (padrões HTML/JS),Alta \newline (contexto de saída),RASP conhece fluxo de dados
+Command Injection,Variável,Alta,RASP monitora chamadas de sistema
+Path Traversal,Média,Alta,RASP intercepta acesso a arquivos
+Zero-day/variações,Baixa,Maior resiliência,RASP baseado em comportamento
