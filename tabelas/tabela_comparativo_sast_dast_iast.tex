@@ -1,34 +1,34 @@
 \centering
-\small
-\begin{tabularx}
-    {\textwidth}
-    {@{}XXXX@{}}
-    \toprule
-        \textbf{Critério}
-        & \textbf{SAST}
-        & \textbf{DAST}
-        & \textbf{IAST} \\ 
-    \midrule
-    \csvreader
-        [head to column names, late after line=\\ \addlinespace]
-        {tabelas/dados/tabela_comparativo_sast_dast_iast.csv}
-        {}
-        {
-            \criterio
-            & \sast
-            & \dast
-            & \iast
-        }
-    \bottomrule
-    \multicolumn
-        {4}
-        {l}
-        {
-            \textbf{Fonte:}
-            \footnotesize
-            \cite{Alazmi2022WebScannerReview};
-            \cite{Sacramento2024AutenticacaoZAP};
-            \cite{DeJesus2023SecurityTestingWebApps};
-            \cite{Cotroneo2025IASTvsRASP}.
-        }
-\end{tabularx}
+    \small
+    \begin{tabularx}
+        {\textwidth}
+        {@{}XXXX@{}}
+        \toprule
+            \textbf{Critério}
+            & \textbf{SAST}
+            & \textbf{DAST}
+            & \textbf{IAST} \\ 
+        \midrule
+        \csvreader
+            [head to column names, late after line=\\ ]
+            {tabelas/dados/tabela_comparativo_sast_dast_iast.csv}
+            {}
+            {
+                \criterio
+                & \sast
+                & \dast
+                & \iast
+            }
+        \bottomrule
+        \multicolumn
+            {4}
+            {l}
+            {
+                \footnotesize
+                \textbf{Fonte:}
+                \cite{Alazmi2022WebScannerReview};
+                \cite{Sacramento2024AutenticacaoZAP};
+                \cite{DeJesus2023SecurityTestingWebApps};
+                \cite{Cotroneo2025IASTvsRASP}.
+            }
+    \end{tabularx}
