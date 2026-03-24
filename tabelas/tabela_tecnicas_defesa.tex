@@ -4,9 +4,9 @@
     {\textwidth}
     {
         @{}
-        >{\hsize=0.75\hsize}X 
-        >{\hsize=0.75\hsize}X 
-        >{\hsize=1.5\hsize}X
+        >{\hsize=.8\hsize}X 
+        >{\hsize=.8\hsize}X 
+        >{\hsize=1.4\hsize}X
         @{}
     }
     \toprule
@@ -15,7 +15,7 @@
         & \textbf{Limitações} \\ 
     \midrule
     \csvreader
-        [head to column names, late after line=\\ \addlinespace]
+        [head to column names, late after line=\\]
         {tabelas/dados/tabela_tecnicas_defesa.csv}
         {}
         {
@@ -24,16 +24,14 @@
             & \limitacoes
         }
     \bottomrule
-    \multicolumn
-        {3}
-        {l}
-        {
-            \footnotesize 
-            \textbf{Fonte:}
-            \cite{Halfond2006SQLInjectionClassification};
-            \cite{Heiderich2013MXSSAttacks};
-            \cite{Gupta2015XSSAttacksDefense};
-            \cite{Barth2008RobustDefensesCSRF};
-            \cite{OWASP2021Top10}.
-        }
 \end{tabularx}
+
+{
+    \footnotesize 
+    \textbf{Fonte:}
+    \cite{Halfond2006SQLInjectionClassification};
+    \cite{Heiderich2013MXSSAttacks};
+    \cite{Gupta2015XSSAttacksDefense};
+    \cite{Barth2008RobustDefensesCSRF};
+    \cite{OWASP2021Top10}.
+}

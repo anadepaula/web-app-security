@@ -2,7 +2,14 @@
 \small
 \begin{tabularx}
     {\textwidth}
-    {@{}XXXX@{}}
+    {
+        @{}
+        >{\hsize=.8\hsize}X 
+        >{\hsize=.9\hsize}X 
+        >{\hsize=.9\hsize}X
+        >{\hsize=1.4\hsize}X
+        @{}
+    }
     \toprule
         \textbf{Categoria \newline de ataque} 
         & \textbf{WAF \newline (efetividade)} 
@@ -20,15 +27,13 @@
             & \observacao
         }
     \bottomrule
-    \multicolumn
-        {4}
-        {l}
-        {
-            \textbf{Fonte:}
-            \footnotesize
-            \cite{Alazmi2022WebScannerReview};
-            \cite{Sacramento2024AutenticacaoZAP};
-            \cite{DeJesus2023SecurityTestingWebApps};
-            \cite{Cotroneo2025IASTvsRASP}.
-        }
 \end{tabularx}
+
+{
+    \textbf{Fonte:}
+    \footnotesize
+    \cite{Alazmi2022WebScannerReview};
+    \cite{Sacramento2024AutenticacaoZAP};
+    \cite{DeJesus2023SecurityTestingWebApps};
+    \cite{Cotroneo2025IASTvsRASP}.
+}
