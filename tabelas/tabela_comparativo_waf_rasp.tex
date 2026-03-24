@@ -1,5 +1,7 @@
 \centering
 \small
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{0.75}
 \begin{tabularx}
     {\textwidth}
     {
@@ -17,7 +19,7 @@
         & \textbf{Observação}\\ 
     \midrule
     \csvreader
-        [head to column names, late after line=\\ \addlinespace]
+        [head to column names, late after line=\\]
         {tabelas/dados/tabela_comparativo_waf_rasp.csv}
         {}
         {
