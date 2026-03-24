@@ -6,7 +6,7 @@ Os mecanismos de defesa complementam a taxonomia de vulnerabilidades ao fornecer
 
 \subsubsection{Defesas por categoria}
 
-Cada categoria de vulnerabilidade descrita nas seções anteriores possui mecanismos de defesa específicos, com diferentes níveis de efetividade e limitações. A Tabela \ref{tab:tecnicas_defesa} consolida a relação entre técnicas de defesa, ataques mitigados e suas restrições, com base em trabalhos de classificação como os de \cite{Halfond2006ClassificationSQLInjectionAttacksCountermeasures}, \cite{Gupta2015CrossSiteScriptingAttacksDefenseMechanisms}, \cite{Barth2022SystematicApproachWebProtectionRuntimeTools} e \cite{None2008RobustDefensesCrossSiteRequestForgery}.
+Cada categoria de vulnerabilidade descrita nas seções anteriores possui mecanismos de defesa específicos, com diferentes níveis de efetividade e limitações. A Tabela \ref{tab:tecnicas_defesa} consolida a relação entre técnicas de defesa, ataques mitigados e suas restrições, com base em trabalhos de classificação como os de \cite{Halfond2006SQLInjectionClassification}, \cite{Gupta2015XSSAttacksDefense}, \cite{Barth2008RobustDefensesCSRF} e \cite{OWASP2021Top10}.
 
 \begin{table}[htbp]
     \caption{Técnicas de defesa por categoria de ataque e limitações}
@@ -16,7 +16,7 @@ Cada categoria de vulnerabilidade descrita nas seções anteriores possui mecani
 
 \subsubsection{Ferramentas de análise: SAST, DAST, IAST}
 
-As ferramentas de análise de segurança identificam vulnerabilidades ao longo do ciclo de vida da aplicação. O SAST (\textit{Static Application Security Testing}) analisa código-fonte ou \textit{bytecode} sem execução, sendo adequado para integração em pipelines CI/CD \cite{Alazmi2022SystematicLiteratureReviewCharacteristicsEffectiveness}. O DAST (\textit{Dynamic Application Security Testing}) realiza testes em tempo de execução, simulando ataques à aplicação, com avanços como a automação de autenticação via OWASP ZAP (Sacramento et al., 2024). Já o IAST (\textit{Interactive Application Security Testing}) combina abordagens estática e dinâmica por meio de instrumentação durante testes funcionais, aumentando a precisão e reduzindo falsos positivos \cite{Cotroneo2025ComparingEffectivenessEfficiencyInteractiveApplicationSecurity}. Evidências recentes reforçam a importância da combinação dessas técnicas para uma cobertura mais eficaz \cite{DeJesusDominguezGarcia2023SecurityTestingWebApplicationsSystematicLiteratureReview}.
+As ferramentas de análise de segurança identificam vulnerabilidades ao longo do ciclo de vida da aplicação. O SAST (\textit{Static Application Security Testing}) analisa código-fonte ou \textit{bytecode} sem execução, sendo adequado para integração em pipelines CI/CD \cite{Alazmi2022WebScannerReview}. O DAST (\textit{Dynamic Application Security Testing}) realiza testes em tempo de execução, simulando ataques à aplicação, com avanços como a automação de autenticação via OWASP ZAP (Sacramento et al., 2024). Já o IAST (\textit{Interactive Application Security Testing}) combina abordagens estática e dinâmica por meio de instrumentação durante testes funcionais, aumentando a precisão e reduzindo falsos positivos \cite{Cotroneo2025IASTvsRASP}. Evidências recentes reforçam a importância da combinação dessas técnicas para uma cobertura mais eficaz \cite{DeJesus2023SecurityTestingWebApps}.
 
 \begin{table}[htbp]
     \caption{Comparativo SAST, DAST, IAST}
@@ -26,11 +26,11 @@ As ferramentas de análise de segurança identificam vulnerabilidades ao longo d
 
 \subsubsection{Defesas em \textit{runtime}: WAF, WAAP, RASP}
 
-Defesas em runtime atuam em produção para proteger a aplicação em execução. O WAF (\textit{Web Application Firewall}) inspeciona o tráfego HTTP e bloqueia requisições maliciosas com base em regras e assinaturas, embora enfrente limitações semelhantes às de ferramentas \textit{black-box} \cite{Doupe2010DetectionIntrusionsMalwareVulnerabilityAssessment}. O WAAP (\textit{Web Application and API Protection}) amplia essa abordagem ao incluir proteção de APIs e mitigação de ataques modernos. Já o RASP (\textit{Runtime Application Self-Protection}) atua dentro da aplicação, utilizando o contexto de execução para aumentar a precisão, reduzir falsos positivos e mitigar ataques \textit{zero-day} \cite{SuredaRiera2025TwentyTwoYearsSinceRevealingCrossSiteScripting}.
+Defesas em runtime atuam em produção para proteger a aplicação em execução. O WAF (\textit{Web Application Firewall}) inspeciona o tráfego HTTP e bloqueia requisições maliciosas com base em regras e assinaturas, embora enfrente limitações semelhantes às de ferramentas \textit{black-box} \cite{Doupe2010IntrusionDetectionCrawler}. O WAAP (\textit{Web Application and API Protection}) amplia essa abordagem ao incluir proteção de APIs e mitigação de ataques modernos. Já o RASP (\textit{Runtime Application Self-Protection}) atua dentro da aplicação, utilizando o contexto de execução para aumentar a precisão, reduzir falsos positivos e mitigar ataques \textit{zero-day} \cite{SuredaRiera2025TwentyTwoYearsXSS}.
 
 \subsubsection{Comparativo WAF × RASP}
 
-\cite{SuredaRiera2025TwentyTwoYearsSinceRevealingCrossSiteScripting} realizaram uma análise sistemática da efetividade de ferramentas de proteção em \textit{runtime}, comparando WAF e RASP em diferentes categorias de ataque. Os resultados indicam que o RASP supera o WAF em precisão por categoria de ataque, em parte devido ao conhecimento contextual da aplicação. A Tabela  \ref{tab:comparativo_waf_rasp} sintetiza o comparativo empírico com base nesse estudo.
+\cite{SuredaRiera2025TwentyTwoYearsXSS} realizaram uma análise sistemática da efetividade de ferramentas de proteção em \textit{runtime}, comparando WAF e RASP em diferentes categorias de ataque. Os resultados indicam que o RASP supera o WAF em precisão por categoria de ataque, em parte devido ao conhecimento contextual da aplicação. A Tabela  \ref{tab:comparativo_waf_rasp} sintetiza o comparativo empírico com base nesse estudo.
 
 \begin{table}[htbp]
     \caption{Comparativo empírico WAF × RASP}

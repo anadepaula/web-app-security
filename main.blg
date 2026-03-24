@@ -3,15 +3,15 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
 The style file: sbc.bst
 Database file #1: referencias.bib
-Warning--can't use both author and editor fields in Doupe2010DetectionIntrusionsMalwareVulnerabilityAssessment
-Warning--empty publisher in Edmundson2022SANSDevSecOpsSurveyCreatingCulture
-Warning--empty journal in Escape2023StateGraphQLSecurity
+Warning--can't use both author and editor fields in Doupe2010IntrusionDetectionCrawler
+Warning--empty publisher in Edmundson2022SANSDevSecOps
+Warning--empty journal in Escape2023GraphQLSecurity
 Warning--empty chapter and pages in Mello2006SegurancaServicosWeb
 Warning--empty publisher in Mello2006SegurancaServicosWeb
-Warning--empty publisher in NIST2020SpecialPublication800207ZeroTrustArchitecture
+Warning--empty publisher in NIST2020ZeroTrustArchitecture
 You've used 30 entries,
             1935 wiz_defined-function locations,
-            676 strings with 12634 characters,
+            676 strings with 11027 characters,
 and the built_in function-call counts, 12638 in all, are:
 = -- 1261
 > -- 461

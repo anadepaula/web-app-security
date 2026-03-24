@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.22)  24 MAR 2026 14:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.22)  24 MAR 2026 14:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -371,50 +371,58 @@ Overfull \hbox (20.99629pt too wide) in paragraph at lines 36--36
  []
 
 (./conteudo/0_resumo.tex
-Underfull \hbox (badness 3009) in paragraph at lines 3--4
-\OT1/ptm/m/it/12 re-side na automa[][]ao via Dev-Se-cOps [[]] e
+Underfull \hbox (badness 4647) in paragraph at lines 3--4
+\OT1/ptm/m/it/12 ba-se-a-das no OWASP Top 10 [[]], uti-li-zando a
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 11--12
+Underfull \hbox (badness 2165) in paragraph at lines 3--4
+\OT1/ptm/m/it/12 de-fesa em pro-fun-di-dade como princ[]^^Ppio uni-fi-ca-dor pa
+ra in-te-grar fer-ra-
+ []
+
+
+Underfull \hbox (badness 1668) in paragraph at lines 3--4
+\OT1/ptm/m/it/12 men-tas de an[]alise (SAST, DAST, IAST) e prote[][]ao em run-t
+ime (RASP)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--4
 \OT1/ptm/m/it/12 [[], [],
  []
 
 
-Underfull \hbox (badness 3536) in paragraph at lines 11--12
-[]\OT1/ptm/m/it/12 ]. The metho-do-logy in-vol-ved a li-te-ra-ture re-view via
+Underfull \hbox (badness 2088) in paragraph at lines 3--4
+\OT1/ptm/m/it/12 Conclui-se que o fu-turo da []area re-side na automa[][]ao via
+ Dev-Se-cOps
  []
 
 
-Underfull \hbox (badness 5245) in paragraph at lines 11--12
-\OT1/ptm/m/it/12 Go-o-gle Scho-lar sup-por-ted by ge-ne-ra-tive AI for con-cep-
-tual synthe-sis
+Underfull \hbox (badness 10000) in paragraph at lines 11--12
+[]\OT1/ptm/m/it/12 This study analy-zes cri-ti-cal web vul-ne-ra-bi-li-ties ba-
+sed on
  []
 
 
-Underfull \hbox (badness 5548) in paragraph at lines 11--12
-\OT1/ptm/m/it/12 [[]]. Gaps were iden-ti-fied re-gar-
+Underfull \hbox (badness 10000) in paragraph at lines 11--12
+\OT1/ptm/m/it/12 the OWASP Top 10 [[]], using defense-in-
  []
 
 
-Underfull \hbox (badness 3000) in paragraph at lines 11--12
-\OT1/ptm/m/it/12 ding sha-dow API se-cu-rity [[], []] and the in-ter-
+Underfull \hbox (badness 1902) in paragraph at lines 11--12
+\OT1/ptm/m/it/12 depth as a unifying prin-ci-ple to in-te-grate analy-sis to-ol
+s (SAST, DAST,
  []
 
 
-Underfull \hbox (badness 1728) in paragraph at lines 11--12
-\OT1/ptm/m/it/12 pre-ta-bi-lity of AI in th-reat de-tec-tion [[], []]. The
+Underfull \hbox (badness 10000) in paragraph at lines 11--12
+\OT1/ptm/m/it/12 IAST) and run-time pro-tec-tion (RASP) [[],
  []
 
 
-Underfull \hbox (badness 3849) in paragraph at lines 11--12
-\OT1/ptm/m/it/12 study con-clu-des that the fi-eld's fu-ture lies in Dev-Se-cOp
-s au-to-ma-tion
- []
-
-
-Underfull \hbox (badness 1540) in paragraph at lines 11--12
-\OT1/ptm/m/it/12 [[]] and the con-so-li-da-tion of Zero Trust ar-
+Underfull \hbox (badness 1642) in paragraph at lines 11--12
+[]\OT1/ptm/m/it/12 , []]. The metho-do-
  []
 
 ) (./conteudo/1_introducao.tex [1
@@ -553,7 +561,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 39--39
  []
 
 
-Overfull \hbox (37.26494pt too wide) in alignment at lines 39--39
+Overfull \hbox (96.9646pt too wide) in alignment at lines 39--39
 [][][] 
  []
 
@@ -619,31 +627,31 @@ Underfull \hbox (badness 2772) in paragraph at lines 37--38
  []
 
 )) (./conteudo/5_tendencias.tex [12] [13]) (./conteudo/6_conclusao.tex
-Underfull \hbox (badness 1028) in paragraph at lines 8--9
+Underfull \hbox (badness 1028) in paragraph at lines 7--8
 []\OT1/ptm/m/n/12 Este tra-ba-lho de-mons-trou que a seguran[]a em aplica[][]oe
 s web consolidou-
  []
 
 
-Underfull \hbox (badness 6775) in paragraph at lines 8--9
+Underfull \hbox (badness 6775) in paragraph at lines 7--8
 \OT1/ptm/m/n/12 se como um pi-lar es-trat[]egico, trans-cen-dendo a ca-mada pe-
 ri-me-tral de rede
  []
 
 
-Underfull \hbox (badness 1939) in paragraph at lines 8--9
+Underfull \hbox (badness 1939) in paragraph at lines 7--8
 \OT1/ptm/m/n/12 surge como o princ[]^^Ppio uni-fi-ca-dor fun-da-men-tal, in-te-
 grando a an[]alise de c[]odigo
  []
 
 ) (./conteudo/7_referencias.tex
-Underfull \hbox (badness 1721) in paragraph at lines 12--5
+Underfull \hbox (badness 1721) in paragraph at lines 11--5
 \OT1/ptm/m/n/12 ga-ran-tir que a agi-li-dade no de-sen-vol-vi-mento n[]ao com-p
 ro-meta a in-te-gri-dade dos
  []
 
 
-Underfull \hbox (badness 1242) in paragraph at lines 12--5
+Underfull \hbox (badness 1242) in paragraph at lines 11--5
 \OT1/ptm/m/n/12 da-dos e a re-sili[]encia das in-fra-es-tru-tu-ras mo-der-nas [
 [],
  []
@@ -656,12 +664,12 @@ L3 programming layer <2026-01-19>
  ) 
 Here is how much of TeX's memory you used:
  8046 strings out of 467525
- 151550 string characters out of 5418988
- 673386 words of memory out of 5000000
+ 150768 string characters out of 5418988
+ 673400 words of memory out of 5000000
  36780 multiletter control sequences out of 15000+600000
  653218 words of font info for 84 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 73i,14n,79p,1699b,437s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 73i,14n,79p,1578b,437s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><
 /usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrb1200.pfb></u
 sr/local/texlive/2026/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local
@@ -670,7 +678,7 @@ e/2026/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2026/tex
 mf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2026/texmf-dist/f
 onts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1
 /urw/times/utmri8a.pfb>
-Output written on main.pdf (17 pages, 161197 bytes).
+Output written on main.pdf (17 pages, 160977 bytes).
 PDF statistics:
  101 PDF objects out of 1000 (max. 8388607)
  65 compressed objects within 1 object stream
