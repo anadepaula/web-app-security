@@ -4,23 +4,37 @@
     Segurança de Arquiteturas Modernas
 }\label{sec:seguranca_arquiteturas_modernas}
 
+A evolução dos sistemas web para arquiteturas modernas, como microsserviços e aplicações baseadas em nuvem, transformou significativamente a superfície de ataque. Com a fragmentação de aplicações monolíticas em Serviços Web distribuídos, a comunicação inter-processos e a exposição de APIs tornaram-se o núcleo do funcionamento e, consequentemente, da segurança destas aplicações.
+
 \subsubsection{
-    APIs REST — OWASP API Top 10, BOLA, rate limiting
+    APIs REST — OWASP API Top 10, BOLA, \textit{rate limiting}
 }\label{sec:apis_rest}
-% \lipsum[1-3]
+
+As APIs RESTful são a espinha dorsal de muitas aplicações modernas. Uma das vulnerabilidades mais críticas neste contexto é a Quebra de Controle de Acesso (\textit{Broken Access Control}), classificada como o risco de segurança mais sério no OWASP Top 10 de 2021, afetando cerca de 94\% das aplicações testadas. No contexto das APIs, essa falha está diretamente relacionada à autorização indevida de objetos (conhecida como BOLA - \textit{Broken Object Level Authorization}, ou IDOR - \textit{Insecure Direct Object Reference}). Essa vulnerabilidade ocorre quando o sistema permite a visualização ou edição da conta de outro usuário simplesmente fornecendo ou manipulando um identificador único.
+
+Para mitigar essas ameaças, além de impor controles de acesso focados na propriedade dos registros, é essencial a implementação de limites de taxa (\textit{rate limiting}). A falta de controle adequado na frequência de interações (CWE-799) deixa a API suscetível à ação de ferramentas de ataque automatizadas. Limitar o acesso à API e aos controladores é fundamental para minimizar tentativas de força bruta e evitar ataques de Negação de Serviço.
 
 \subsubsection{
-    APIs GraphQL — introspecção, query depth, DoS
+    APIs GraphQL — introspecção, \textit{query depth}, DoS
 }\label{sec:apis_graphql}
-% \lipsum[4-6]
+As APIs modernas, incluindo o modelo GraphQL (onde o cliente define a estrutura da resposta), enfrentam sérios desafios em relação à alocação de recursos. Segundo as diretrizes da OWASP, a Negação de Serviço (DoS) é sempre possível quando o atacante dispõe de recursos suficientes, mas práticas de design e codificação definem a magnitude do ataque. Em cenários de APIs com consultas flexíveis, a profundidade excessiva de consultas (\textit{query depth}) pode resultar em transações computacionalmente muito custosas. O processamento dessas requisições complexas facilita a exaustão de CPU, E/S e memória do servidor, tirando o sistema do ar com menor esforço por parte do atacante.
+
+Adicionalmente, o recurso de introspecção, quando deixado ativo em ambientes de produção, reflete o problema clássico de Má Configuração de Segurança (A05:2021). A manutenção de funcionalidades desnecessárias habilitadas (como páginas de diagnóstico ou esquemas completos da API) fornece aos atacantes informações detalhadas sobre o funcionamento interno da aplicação, facilitando a descoberta de falhas subjacentes.
 
 \subsubsection{
-    Microserviços — mTLS, API Gateway, gestão de segredos
+    Microserviços — mTLS, API \textit{Gateway}, gestão de segredos
 }\label{sec:microservicos}
-% \lipsum[7-9]
+
+A arquitetura de microsserviços é uma evolução da Arquitetura Orientada a Serviços (SOA), baseada na troca de mensagens entre provedores e clientes. Nesse modelo altamente distribuído, o roteamento de mensagens passa por múltiplos nós intermediários, como os \textit{API Gateways}. Como a confidencialidade e a integridade da mensagem precisam ser mantidas, abordagens de proteção apenas de perímetro tornam-se insuficientes. A segurança deve operar com comunicações fortemente protegidas entre os nós da rede.
+
+A comunicação entre microsserviços exige o uso de criptografia em trânsito com protocolos seguros, como o TLS (\textit{Transport Layer Security}) com parâmetros fortes. Esse mecanismo (frequentemente estendido para mTLS em microsserviços para garantir autenticação mútua) previne interceptações em redes inseguras. Além disso, a gestão de segredos e o manuseio de chaves criptográficas não podem ser negligenciados (A02:2021 - \textit{Cryptographic Failures}). Os sistemas devem evitar o uso de chaves padrão, chaves armazenadas no código-fonte, ou falhas no ciclo de rotação e gerenciamento desses segredos.
 
 \subsubsection{
-    Cloud-native — IaC scanning, Kubernetes, S3
+    \textit{Cloud-native} — IaC \textit{scanning}, \textit{Kubernetes}, S3
 }\label{sec:cloud_native}
-% \lipsum[10-12]
+
+Aplicações nativas da nuvem dependem ativamente de infraestruturas altamente dinâmicas e configuráveis (orquestradores de contêineres e armazenamento em provedores). O uso excessivo de recursos sem as restrições adequadas frequentemente leva a vulnerabilidades de Má Configuração de Segurança. Um cenário de ataque comum envolve permissões padrão em provedores de nuvem (CSP) deixadas abertas para a Internet (por exemplo, permissões de armazenamento do Amazon S3). Isso permite que dados confidenciais sejam facilmente acessados por qualquer usuário da rede. A prevenção exige processos de \textit{hardening} consistentes e a revisão constante das permissões de armazenamento em nuvem (ACLs e \textit{buckets}).
+
+Por fim, o ecossistema \textit{cloud-native} faz forte uso de Infraestrutura como Código (IaC) e \textit{pipelines} de CI/CD (Integração e Entrega Contínuas). O OWASP introduziu a categoria "Falhas na Integridade de Dados e Software" (A08:2021), focando em atualizações e \textit{pipelines} não verificados. Sem o devido controle, \textit{pipelines} de CI/CD podem introduzir acessos não autorizados ou implantar códigos maliciosos na infraestrutura. A defesa engloba a configuração e o controle de acesso restrito aos \textit{pipelines}, verificação de dependências com ferramentas de \textit{Software Composition Analysis} e a implementação de verificações focadas em Infraestrutura como Código (IaC) para prevenir vulnerabilidades de provisionamento.
+
 }

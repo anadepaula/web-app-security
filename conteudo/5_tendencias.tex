@@ -5,14 +5,61 @@
     Tendências e Pesquisas em Andamento
 } \label{sec:tendencias}
 
-Descrição breve de tópicos atuais, por exemplo:
 
-\begin{itemize}
-    \item IA/ML/DL para detecção: CNN, LSTM, GNN, modelos adversariais
-    \item Zero Trust Architecture
-    \item DevSecOps: integração segurança no CI/CD
-    \item Desafios abertos: XAI em IDS, shadow APIs, SPAs
-\end{itemize}
+As tecnologias de desenvolvimento evoluem na mesma medida que evoluem as ameaças a aplicações web, o que impulsiona as pesquisas voltadas a novas abordagens para a proteção de aplicações web. A mitigação de ataques complexos hoje exige que a segurança seja incorporada de forma pervasiva, desde o design até a execução. A seguir, mencionamos algumas das principais tendências atuais.
 
-% \lipsum[20-25]
+\subsection{
+    Inteligência Artificial para Detecção de Ameaças
+}
+
+A aplicação de técnicas de inteligência artificial, em especial de aprendizado de máquina, tem revolucionado a detecção de vulnerabilidades e a classificação de anomalias maliciosas. 
+
+Abordagens modernas utilizam arquiteturas avançadas de redes neurais, como redes neurais convolucionais (CNNs), redes neurais recorrentes (LSTM) e redes neurais em grafos (GNN), para analisar fluxos de dados complexos e identificar padrões sutis de injeção. 
+
+Pesquisas atuais utilizam técnicas como análise de N-Grams e \textit{support vector machines} (SVM) para classificar tráfego e identificar vulnerabilidades (como injeções de XSS e SQL) com maior precisão. 
+
+Além disso, abordagens comportamentais baseadas em anomalias (inspiradas no sistema imunológico humano, por exemplo) têm sido implementadas no lado do servidor para mitigar ataques desconhecidos (\textit{zero-day}), reduzindo a dependência exclusiva de assinaturas rígidas.
+
+Paralelamente, pesquisas sobre modelos adversariais buscam fortalecer esses mesmos classificadores contra atacantes que tentam contornar os filtros de segurança através de pequenas mutações no \textit{input} malicioso.
+
+O uso de IA em sistemas de detecção de intrusão (IDS) levanta o problema da interpretabilidade, exigindo o avanço em modelos de inteligência artificial explicáveis para que profissionais consigam auditar por que uma requisição foi bloqueada. 
+
+\subsection{
+    Arquiteturas de Confiança Zero e Gestão Avançada de Identidades
+}
+
+À medida que arquiteturas baseadas em microsserviços e APIs distribuídas se tornam a norma, a adoção de Arquiteturas de Confiança Zero (\textit{Zero Trust}) é fundamental. Sob essa premissa, nenhuma requisição ou transação é confiável por padrão, mesmo que originada dentro da rede corporativa, exigindo verificação e autorização contínuas das identidades (federadas ou não) e contexto dos dispositivos.
+
+Aplicações, mesmo que internas, frequentemente cruzam múltiplos domínios de segurança, exigindo gestão de identidades federadas e o estabelecimento dinâmico de confiança. Tecnologias de padronização, como o SAML 2.0 e XACML, têm evoluído para suportar autenticação única (SSO) com o uso de pseudônimos e identificadores opacos. 
+
+Essa abordagem não apenas garante autorização baseada em atributos de forma interoperável, mas também protege a privacidade do usuário contra o rastreamento indevido.
+
+\subsection{
+    \textit{DevSecOps} - Integração de segurança no CI/CD
+}
+
+Para mitigar falhas ainda em fase de código, a indústria tem adotado a esteira de \textit{DevSecOps}, onde integra-se a automação rigorosa de verificações de integridade nativamente no pipeline de integração e entrega contínuas (CI/CD). Isso assegura que softwares atualizados ou componentes de bibliotecas de terceiros sejam validados contra vulnerabilidades antes de alcançarem o ambiente de produção.
+
+Esse processo de integração contínua da segurança no ciclo de vida de desenvolvimento é uma resposta à demanda por entregas ágeis. 
+
+A incorporação de ferramentas de testes estáticos, dinâmicos e interativos, (SAST DAST e IAST) nos processos de CI/CD permite descobrir vulnerabilidades de injeção e falhas lógicas antes que o software chegue à produção.
+
+Adicionalmente, com a introdução da categoria de "design inseguro na OWASP \textit{Top} 10 de 2021, o mercado reforça a necessidade de preocupar-se com segurança desde o início (oque é chamado de \textit{shift-left}) usando de padrões de design seguros e arquiteturas de referência desde as fases pré-código.
+
+\subsection{
+    Segurança em Cadeias de Suprimento e Componentes de Terceiros
+}
+
+O uso massivo de bibliotecas, repositórios de código aberto e redes de distribuição de conteúdo (CDNs) levanta preocupações severas de integridade. As pesquisas em andamento focam no monitoramento de dependências e verificação de integridade de software por meio de ferramentas como OWASP \textit{dependency check} ou assinaturas digitais, garantindo que o pipeline de CI/CD e as atualizações automáticas não introduzam vulnerabilidades legadas ou código malicioso de fornecedores comprometido.
+
+\subsection{
+    Desafios Abertos
+}
+
+Apesar da evolução, diversos desafios técnicos permanecem abertos para a comunidade de segurança. 
+
+Os modelos de comunicação modernos, orientados fortemente a APIs (REST, GraphQL) e processamento no lado do cliente (DOM-based), mudam a superfície de ataque clássica. A proliferação das \textit{single-page applications} (SPAs) introduze complexidades significativas no lado do cliente, dificultando o rastreamento e mitigação de vulnerabilidades puramente baseadas no manipulador de DOM (como o DOM-\textit{based} XSS). O controle do DOM e a sanitização contextual no navegador são hoje desafios cruciais para conter o XSS baseado em DOM. 
+
+Ao mesmo tempo, a descoberta automatizada e o monitoramento de APIs ocultas (\textit{shadow} APIs), que resultam em pontos não mapeados de possível vulnerabilidade de um sistema, exigem controles refinados de permissões e de rate \textit{limit}, já que os mecanismos de segurança baseados no cliente podem ser facilmente contornados por atacantes diretos na API.
+
 }
