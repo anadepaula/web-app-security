@@ -15,7 +15,7 @@ Já as arquiteturas de segurança referem-se à forma como os mecanismos de segu
 
 Ao longo desse período tem sido trocado o ranking das vulnerabilidades web, algumas tem ganhado mais espaço com ataques bem-sucedidos, como é o caso da Quebra de controle de Acesso que está em primeiro lugar, mostrando que há uma necessidade de controles mais rigorosos de autorização e não depende apenas da correção de falhas de implementação, mas sim adoção de princípios de segurança ao longo de todo o ciclo de vida do desenvolvimento. 
 
-As falhas criptográficas subiram para segunda posição, uma vulnerabilidade que muitas vezes leva à exposição de dados confidenciais ou sistemas comprometidos. A injeção que em 2017 estava em primeiro lugar, perdeu espaço e, em 2021 foi rebaixada para a terceira posição com uma taxa de incidência máxima de 19\%, uma taxa de incidência média de 3,37\%. Houve a criação de novos grupos, como Design Inseguro, que está em quarto lugar destacando problemas estruturais de arquitetura e modelagem de segurança desde as fases iniciais do desenvolvimento, como por exemplo, confiar apenas em verificações no \textit{frontend}, ao invés de validar no servidor \cite{owasp:2021}.
+As falhas criptográficas subiram para segunda posição, uma vulnerabilidade que muitas vezes leva à exposição de dados confidenciais ou sistemas comprometidos. A injeção que em 2017 estava em primeiro lugar, perdeu espaço e, em 2021 foi rebaixada para a terceira posição com uma taxa de incidência máxima de 19\%, uma taxa de incidência média de 3,37\%. Houve a criação de novos grupos, como Design Inseguro, que está em quarto lugar destacando problemas estruturais de arquitetura e modelagem de segurança desde as fases iniciais do desenvolvimento, como por exemplo, confiar apenas em verificações no \textit{frontend}, ao invés de validar no servidor \cite{OWASP2021Top10}.
 
 \subsubsection{
     Vulnerabilidades de Injeção (\textit{SQLi, Command, LDAP})
@@ -23,7 +23,7 @@ As falhas criptográficas subiram para segunda posição, uma vulnerabilidade qu
 
 As vulnerabilidades de injeção constituem uma das classes mais conhecidas e exploradas em aplicações web. Elas ocorrem quando o usuário (cliente) fornece dados que são interpretados pelo servidor como parte de comando ou consultas executadas por sistemas subjacentes, como banco de dados ou sistemas operacionais. Para mitigar esse tipo de ataque deve-se usar uma validação rigorosa das entradas do usuário, uso de bibliotecas seguras de acesso (por exemplo, \textit{Object Relational Mapping \- ORM}), princípio do menor privilégio e monitoramento contínuo de \textit{logs} de acesso e execução. 
 
-Começando pelo \textit{SQL injection (SQLi)} é uma vulnerabilidade que o usuário utiliza comandos SQL, (por exemplo, \verb|SELECT * FROM <tabela> WHERE <coluna>='' OR 1=1|) para acessar, modificar ou até excluir dados sensíveis do banco de dados daquela aplicação web. O comando 1=1 é uma tautologia, ou seja, a condição sempre será verdadeira, ignorando a condição original na cláusula \textit{WHERE} e retornando todas as linhas da tabela \cite{appelt:2014}. 
+Começando pelo \textit{SQL injection (SQLi)} é uma vulnerabilidade que o usuário utiliza comandos SQL, (por exemplo, \verb|SELECT * FROM <tabela> WHERE <coluna>='' OR 1=1|) para acessar, modificar ou até excluir dados sensíveis do banco de dados daquela aplicação web. O comando 1=1 é uma tautologia, ou seja, a condição sempre será verdadeira, ignorando a condição original na cláusula \textit{WHERE} e retornando todas as linhas da tabela \cite{Appelt2014SQLInjectionTesting}. 
 
 Outro tipo de ataque de injeção importante também é o \textit{command injection}, uma vulnerabilidade em que a aplicação permite que dados fornecidos por um usuário sejam incorporados diretamente em comandos executados pelo sistema operacional. Isso pode levar a acesso ou modificação de arquivos sensíveis, escalada de privilégios, instalação de \textit{malwares} ou \textit{backdoors} e até o comprometimento completo do servidor. 
 
@@ -32,7 +32,7 @@ A vulnerabilidade de \textit{LDAP injection} ocorre quando entradas fornecidas p
 \subsubsection{
     \textit{Cross-Site Scripting (XSS): Reflected, Stored, DOM-based}
 }
-O \textit{XSS} é uma vulnerabilidade de segurança que permite a um atacante inserir \textit{scripts} maliciosos em páginas web visualizadas por outros usuários. É comum que dados fornecidos por usuários sejam exibidos posteriormente em páginas \textit{HTML}. Quando esses dados não passam por validação, \textit{scripts} inseridos por atacantes podem ser interpretados pelo navegador como código legítimo \cite{sarmah:2018}. 
+O \textit{XSS} é uma vulnerabilidade de segurança que permite a um atacante inserir \textit{scripts} maliciosos em páginas web visualizadas por outros usuários. É comum que dados fornecidos por usuários sejam exibidos posteriormente em páginas \textit{HTML}. Quando esses dados não passam por validação, \textit{scripts} inseridos por atacantes podem ser interpretados pelo navegador como código legítimo \cite{Sarmah2018SurveyXSSDetection}. 
 
 \textit{Reflected XSS} ocorre quando o código malicioso enviado pelo atacante é imediatamente refletido na resposta da aplicação web. Normalmente, esse ataque ocorre em parâmetros de requisições HTTP, como campos de busca ou parâmetros de URL. 
 
@@ -48,13 +48,13 @@ Os impactos podem ser diversos, como roubo de \textit{cookies} de sessão, seque
 
 O \textit{Cross-Site Request Forgery (CSRF)} é um ataque que explora a confiança que uma aplicação web deposita no navegador do usuário (cliente) autenticado. Nesse tipo de ataque, o invasor induz a vítima a executar uma requisição maliciosa em um site no qual ela já está autenticada, fazendo com que o servidor interprete essa ação como legítima.
 
-Funcionando da seguinte maneira, quando um usuário realiza login em um site, o servidor geralmente mantém sua sessão ativa por meio de \textit{cookies} de autenticação (usando um \textit{token JWT}). Se o usuário visitar um site malicioso enquanto está autenticado, esse site pode gerar uma requisição automática para o site legítimo. Como o navegador envia automaticamente os \textit{cookies} associados ao domínio, o servidor interpreta a requisição como se tivesse sido realizada pelo próprio usuário \cite{lin:2009}.
+Funcionando da seguinte maneira, quando um usuário realiza login em um site, o servidor geralmente mantém sua sessão ativa por meio de \textit{cookies} de autenticação (usando um \textit{token JWT}). Se o usuário visitar um site malicioso enquanto está autenticado, esse site pode gerar uma requisição automática para o site legítimo. Como o navegador envia automaticamente os \textit{cookies} associados ao domínio, o servidor interpreta a requisição como se tivesse sido realizada pelo próprio usuário \cite{Lin2009ThreatModelingCSRF}.
 
 \subsubsection{
     \textit{Broken Access Control} e IDOR
 }
 
-O \textit{Broken Access Control} é uma vulnerabilidade que ocorre quando uma aplicação falha em aplicar corretamente as regras de autorização, permitindo que usuários executem ações ou acessem recursos que deveriam estar restritos. Esse tipo de falha está associado a sistemas em que os mecanismos de verificação de permissões são implementados de forma inadequada ou incompleta \cite{kusnana:2025}.
+O \textit{Broken Access Control} é uma vulnerabilidade que ocorre quando uma aplicação falha em aplicar corretamente as regras de autorização, permitindo que usuários executem ações ou acessem recursos que deveriam estar restritos. Esse tipo de falha está associado a sistemas em que os mecanismos de verificação de permissões são implementados de forma inadequada ou incompleta \cite{Kusnana2025IDORBrokenAccess}.
 
 Considerando um \textit{endpoint} administrativo como por exemplo \verb|https://site.com/admin/financas|, se o servidor não validar corretamente as permissões associadas à sessão do usuário, ele poderá acessar as finanças mesmo sem possuir privilégios adequados.
 
@@ -68,7 +68,7 @@ Exemplificando, o site https://site.com/pedido?id=1025, o parâmetro está receb
 \subsubsection{
     Falhas Criptográficas
 }
-As falhas criptográficas referem-se ao uso incorreto, insuficiente ou inadequado de mecanismos criptográficos para proteger os dados sensíveis em sistemas computacionais. Uma das causas mais comuns de falhas criptográficas é o uso de algoritmos obsoletos ou considerados inseguros. Algoritmos como SHA-1(para hashing), DES ou 3DES (para cifragem), entre outros, já não oferecem garantias adequadas contra ataques modernos, devido à possibilidade de colisões e o avanço de processamento de hardwares modernos. Além disso, a utilização incorreta de algoritmos considerados seguros como o emprego de criptografia simétrica sem gerenciamento adequado de chaves, geração previsível de números aleatórios ou reutilização de vetores de inicialização (IV), podem comprometer completamente a segurança dos sistemas \cite{Blessing, Specter, Weitzner:2021}.
+As falhas criptográficas referem-se ao uso incorreto, insuficiente ou inadequado de mecanismos criptográficos para proteger os dados sensíveis em sistemas computacionais. Uma das causas mais comuns de falhas criptográficas é o uso de algoritmos obsoletos ou considerados inseguros. Algoritmos como SHA-1(para hashing), DES ou 3DES (para cifragem), entre outros, já não oferecem garantias adequadas contra ataques modernos, devido à possibilidade de colisões e o avanço de processamento de hardwares modernos. Além disso, a utilização incorreta de algoritmos considerados seguros como o emprego de criptografia simétrica sem gerenciamento adequado de chaves, geração previsível de números aleatórios ou reutilização de vetores de inicialização (IV), podem comprometer completamente a segurança dos sistemas \cite{Blessing2021RollYourOwnCrypto}.
 
 Outro problema recorrente é o armazenamento de senhas em texto puro (plain text) ou com técnicas inadequadas de hash, sem o uso de sal ou funções específicas para armazenamento seguro de credenciais.
 
@@ -77,7 +77,7 @@ Falhas também podem ocorrer durante a transmissão de dados, especialmente quan
 
 \subsubsection{\textit{Misconfiguration} e \textit{Supply Chain}}
 
-As más configurações (\textit{misconfiguration}) ocorrem quando sistemas são implantados com definições inseguras, seja por falta de conhecimento técnico, ausência de políticas padronizadas ou por erro humano. Exemplos clássicos incluem \textit{buckets} de armazenamento em nuvem com permissões de leitura pública, portas de administração expostas à internet, banco de dados sem autenticação adequada, senhas com valores padrões e etc. De acordo com relatórios da \textit{Cloud Security Alliance}, as más configurações representam uma das principais causas de violação de dados em ambiente \textit{cloud} \cite{cloudsecurityalliance:2024}.
+As más configurações (\textit{misconfiguration}) ocorrem quando sistemas são implantados com definições inseguras, seja por falta de conhecimento técnico, ausência de políticas padronizadas ou por erro humano. Exemplos clássicos incluem \textit{buckets} de armazenamento em nuvem com permissões de leitura pública, portas de administração expostas à internet, banco de dados sem autenticação adequada, senhas com valores padrões e etc. De acordo com relatórios da \textit{Cloud Security Alliance}, as más configurações representam uma das principais causas de violação de dados em ambiente \textit{cloud} \cite{CloudSecurityAlliance2024TopThreats}.
 
 Os impactos são diversos como acesso não autorizado aos sistemas, vazamento de informações sensíveis, execução de ataques automatizados e até o comprometimento completo da aplicação ou servidor.
 
